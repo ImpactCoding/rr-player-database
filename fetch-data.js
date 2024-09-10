@@ -31,12 +31,11 @@ async function updateFile() {
       "Old file content: " + currentContent;
 
     // Schritt 2: Neuen Inhalt erstellen (aktuellen Inhalt parsen und Array hinzufügen)
-    let jsonContent = JSON.parse(currentContent || "[]"); // Falls der Inhalt leer ist, setze leeres Array
+    let jsonContent = JSON.parse(currentContent); // Falls der Inhalt leer ist, setze leeres Array
     console.log("Current JSON content:", jsonContent);
 
     const newDate = Date.now();
-    const newEntry = { time: newDate }; // Neuer Eintrag mit Zeitstempel
-    jsonContent.push(newEntry); // Den neuen Eintrag in das Array einfügen
+    jsonContent.newDate = "time"; // Den neuen Eintrag in das Array einfügen
 
     const updatedContent = btoa(JSON.stringify(jsonContent, null, 2)); // Neuer Dateiinhalt (Base64 encoded)
 
