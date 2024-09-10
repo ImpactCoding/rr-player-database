@@ -1,11 +1,9 @@
-require("dotenv").config();
-
 // Informationen zu deinem Repository und Datei
 const owner = "ImpactCoding"; // GitHub Username oder Organisation
 const repo = "rr-vr-ranking"; // Repository Name
 const path = "rr-players.json"; // Pfad zur Datei, die du ändern möchtest
 const branch = "main"; // Branch, auf dem die Änderungen stattfinden sollen
-const token = process.env.GITHUB_TOKEN;
+const token = "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";
 
 // Fetch URL, um den Inhalt der Datei zu bekommen
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
