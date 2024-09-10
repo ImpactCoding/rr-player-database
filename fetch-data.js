@@ -35,7 +35,7 @@ async function updateFile() {
     console.log("Current JSON content:", jsonContent);
 
     const newDate = Date.now();
-    jsonContent.newDate = "time"; // Den neuen Eintrag in das Array einfügen
+    jsonContent[newDate] = "time"; // Den neuen Eintrag in das Array einfügen
 
     const updatedContent = btoa(JSON.stringify(jsonContent, null, 2)); // Neuer Dateiinhalt (Base64 encoded)
 
