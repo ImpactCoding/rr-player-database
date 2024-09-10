@@ -10,13 +10,16 @@ let sha;
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
 
 async function refreshPlayerDatabase() {
-  const file = await downloadFile();
+  const oldPlayerData = await downloadFile();
+  const currentPlayerData = await fetchRooms();
+  const updatedPlayerData = insertCurrentPlayerData(
+    oldPlayerData,
+    currentPlayerData
+  );
+  console.log(updatedPlayerData);
 
-  document.querySelector(".new-file").innerHTML = "Old file content: " + file;
-  const newDate = Date.now();
-  file[newDate] = "time"; // Den neuen Eintrag in das Array einfügen
-
-  uploadFile(file);
+  // sortData();
+  // uploadFile(currentFile);
 }
 
 async function downloadFile() {
@@ -58,4 +61,42 @@ async function uploadFile(fileToUpload) {
 
   const result = await updateResponse.json();
   console.log("File updated successfully:", result);
+}
+
+async function fetchRooms() {
+  const response = await fetch("https://umapyoi.net/api/v1/rr-rooms");
+  const rooms = await response.json();
+  let players = [];
+
+  // Iterate through each room and add players to the array
+  await rooms.forEach((room) => {
+    players.push(...Object.values(room.players));
+  });
+
+  players = players.filter(
+    (player) => player.ev !== undefined && player.ev !== null
+  );
+
+  return players;
+}
+
+function sortData() {
+  players.sort((a, b) => {
+    return parseInt(b.ev, 10) - parseInt(a.ev, 10);
+  });
+}
+
+function insertCurrentPlayerData(oldData, roomsData) {
+  console.log("oldData:");
+  console.log(oldData);
+  console.log("roomsData:");
+  console.log(roomsData);
+
+  roomsData.forEach((player) => {
+    if (!oldData.hasOwnProperty(player.fc)) {
+      oldData[player.fc] = player;
+    } else {
+      oldData[player.fc] = player;
+    }
+  });
 }
