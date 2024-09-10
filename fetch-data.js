@@ -17,8 +17,8 @@ async function refreshPlayerDatabase() {
   );
   console.log(updatedPlayerData);
 
-  // sortData();
-  // uploadFile(currentFile);
+  sortData();
+  uploadFile(currentFile);
 }
 
 async function downloadFile() {
@@ -92,11 +92,21 @@ function insertCurrentPlayerData(oldData, roomsData) {
   console.log(roomsData);
 
   roomsData.forEach((player) => {
-    if (!oldData.hasOwnProperty(player.fc)) {
-      oldData[player.fc] = player;
+    if (oldData.hasOwnProperty(player.fc)) {
+      const oldVR = oldData[player.fc].ev;
+      const newVR = player.ev;
+
+      if (Math.abs(oldVR - newVR) > 200) {
+        player.banned = true;
+      }
     } else {
-      oldData[player.fc] = player;
+      if (player.ev > 9999) {
+        player.banned = true;
+      }
     }
+
+    player.lastupdated = Date.now();
+    oldData[player.fc] = player;
   });
 
   return oldData;
