@@ -1,9 +1,9 @@
 // Informationen zu deinem Repository und Datei
 const owner = "ImpactCoding"; // GitHub Username oder Organisation
-const repo = "rr-vr-ranking"; // Repository Name
+const repo = "rr-player-database"; // Repository Name
 const path = "rr-players.json"; // Pfad zur Datei, die du ändern möchtest
 const branch = "main"; // Branch, auf dem die Änderungen stattfinden sollen
-const token = "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";
+const token = "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";
 
 // Fetch URL, um den Inhalt der Datei zu bekommen
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
