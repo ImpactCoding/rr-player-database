@@ -5,8 +5,6 @@ const path = "rr-players.json"; // Pfad zur Datei, die du ändern möchtest
 const branch = "main"; // Branch, auf dem die Änderungen stattfinden sollen
 const token = "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"; // Dein GitHub-Token
 let sha;
-
-// Fetch URL, um den Inhalt der Datei zu bekommen
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
 
 async function refreshPlayerDatabase() {
@@ -99,4 +97,6 @@ function insertCurrentPlayerData(oldData, roomsData) {
       oldData[player.fc] = player;
     }
   });
+
+  return oldData;
 }
