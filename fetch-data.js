@@ -17,8 +17,7 @@ async function refreshPlayerDatabase() {
   );
   console.log(updatedPlayerData);
 
-  sortData();
-  uploadFile(currentFile);
+  uploadFile(updatedPlayerData);
 }
 
 async function downloadFile() {
@@ -37,7 +36,9 @@ async function downloadFile() {
 }
 
 async function uploadFile(fileToUpload) {
-  const updatedContent = btoa(JSON.stringify(fileToUpload, null, 2)); // Neuer Dateiinhalt (Base64 encoded)
+  const updatedContent = btoa(
+    unescape(encodeURIComponent(JSON.stringify(fileToUpload, null, 2)))
+  );
 
   const updateResponse = await fetch(fileUrl, {
     method: "PUT",
@@ -79,12 +80,6 @@ async function fetchRooms() {
   return players;
 }
 
-function sortData() {
-  players.sort((a, b) => {
-    return parseInt(b.ev, 10) - parseInt(a.ev, 10);
-  });
-}
-
 function insertCurrentPlayerData(oldData, roomsData) {
   console.log("oldData:");
   console.log(oldData);
@@ -98,11 +93,13 @@ function insertCurrentPlayerData(oldData, roomsData) {
 
       if (Math.abs(oldVR - newVR) > 200) {
         player.banned = true;
+        ban_date = Date.now();
       }
     } else {
       if (player.ev > 9999) {
         player.banned = true;
-      }
+        ban_date = Date.now();
+      } else player.banned = false;
     }
 
     player.lastupdated = Date.now();
