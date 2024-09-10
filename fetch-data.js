@@ -1,9 +1,9 @@
 // Informationen zu deinem Repository und Datei
 const owner = "ImpactCoding"; // GitHub Username oder Organisation
 const repo = "rr-player-database"; // Repository Name
-const path = "rr-players.js"; // Pfad zur Datei, die du ändern möchtest
+const path = "rr-players.json"; // Pfad zur Datei, die du ändern möchtest
 const branch = "main"; // Branch, auf dem die Änderungen stattfinden sollen
-const token = "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";
+const token = "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"; // Dein GitHub-Token
 
 // Fetch URL, um den Inhalt der Datei zu bekommen
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
@@ -25,14 +25,18 @@ async function updateFile() {
 
     const fileData = await response.json();
     const sha = fileData.sha; // SHA der Datei, um die neue Datei zu überschreiben
-    const currentContent = atob(fileData.content); // Aktueller Dateiinhalt als String
+    const currentContent = atob(fileData.content); // Aktueller Dateiinhalt als String (Base64-encoded)
 
     document.querySelector(".new-file").innerHTML =
-      "Old file content:" + currentContent;
+      "Old file content: " + currentContent;
 
     // Schritt 2: Neuen Inhalt erstellen (aktuellen Inhalt parsen und Array hinzufügen)
+    let jsonContent = JSON.parse(currentContent || "[]"); // Falls der Inhalt leer ist, setze leeres Array
+    console.log("Current JSON content:", jsonContent);
+
     const newDate = Date.now();
-    const array = [newDate];
+    const newEntry = { time: newDate }; // Neuer Eintrag mit Zeitstempel
+    jsonContent.push(newEntry); // Den neuen Eintrag in das Array einfügen
 
     const updatedContent = btoa(JSON.stringify(jsonContent, null, 2)); // Neuer Dateiinhalt (Base64 encoded)
 
@@ -45,9 +49,9 @@ async function updateFile() {
         "Content-Type": "application/json",
       },
       body: JSON.stringify({
-        message: "Updated rr-players.json: Added new array",
-        content: updatedContent,
-        sha: sha,
+        message: "Updated rr-players.json: Added new entry",
+        content: updatedContent, // Der neue, aktualisierte Inhalt (Base64-encoded)
+        sha: sha, // SHA, um die Datei zu überschreiben
         branch: branch,
       }),
     });
