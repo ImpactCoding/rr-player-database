@@ -11,8 +11,6 @@ const branch = "main"; // Branch, auf dem die Änderungen stattfinden sollen
 const token = process.env.ACCESS_TOKEN; // Use GitHub token from environment variables
 let sha;
 
-console.log(token);
-
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
 
 async function refreshPlayerDatabase() {
