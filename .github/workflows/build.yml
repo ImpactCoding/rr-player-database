@@ -1,6 +1,6 @@
-name: Scheduled Node.js Script
-
-on: push
+on:
+  schedule:
+    - cron: "* * * * *"
 
 jobs:
   build-node:
