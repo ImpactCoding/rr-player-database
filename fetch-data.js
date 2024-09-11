@@ -1,3 +1,5 @@
+const fetch = require("node-fetch"); // Import node-fetch
+
 // Informationen zu deinem Repository und Datei
 const owner = "ImpactCoding"; // GitHub Username oder Organisation
 const repo = "rr-player-database"; // Repository Name
