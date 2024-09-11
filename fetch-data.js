@@ -1,5 +1,7 @@
-const fetch = require("node-fetch"); // Import node-fetch
-require("dotenv").config(); // Load environment variables from .env
+const fetch = require("node-fetch");
+const dotenv = require("dotenv");
+
+dotenv.config(); // Load environment variables from .env
 
 // Informationen zu deinem Repository und Datei
 const owner = "ImpactCoding"; // GitHub Username oder Organisation
@@ -8,6 +10,8 @@ const path = "rr-players.json"; // Pfad zur Datei, die du ändern möchtest
 const branch = "main"; // Branch, auf dem die Änderungen stattfinden sollen
 const token = process.env.ACCESS_TOKEN; // Use GitHub token from environment variables
 let sha;
+
+console.log(token);
 
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
 
