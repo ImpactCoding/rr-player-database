@@ -1,3 +1,5 @@
+name: Scheduled Node.js Script
+
 on: push
 
 jobs:
@@ -9,9 +11,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Install Node.js dependencies
-        run: npm install node-fetch@2
+        run: npm install
 
       - name: Run fetch-data.js
         run: node fetch-data.js
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Ensure this matches your script
