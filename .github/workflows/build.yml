@@ -1,6 +1,4 @@
-on:
-  schedule:
-    - cron: "* * * * *"
+on: push
 
 jobs:
   build-node:
