@@ -36,6 +36,9 @@ async function downloadFile() {
   const fileData = await response.json();
   sha = fileData.sha;
 
+  console.log(fileData);
+  console.log(token);
+
   // Use Buffer to handle Base64 decoding with UTF-8 support
   const fileContent = Buffer.from(fileData.content, "base64").toString("utf-8");
 
