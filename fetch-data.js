@@ -1,11 +1,9 @@
-const fetch = require("node-fetch"); // Import node-fetch
-
 // Informationen zu deinem Repository und Datei
 const owner = "ImpactCoding"; // GitHub Username oder Organisation
 const repo = "rr-player-database"; // Repository Name
 const path = "rr-players.json"; // Pfad zur Datei, die du ändern möchtest
 const branch = "main"; // Branch, auf dem die Änderungen stattfinden sollen
-const token = process.env.ACCESS_TOKEN; // Dein GitHub-Token
+const token = process.env.ACCESS_TOKEN; // Use GitHub token from environment variables
 let sha;
 
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
@@ -32,15 +30,18 @@ async function downloadFile() {
 
   const fileData = await response.json();
   sha = fileData.sha;
-  const fileContent = atob(fileData.content);
+
+  // Use Buffer to handle Base64 decoding with UTF-8 support
+  const fileContent = Buffer.from(fileData.content, "base64").toString("utf-8");
 
   return JSON.parse(fileContent);
 }
 
 async function uploadFile(fileToUpload) {
-  const updatedContent = btoa(
-    unescape(encodeURIComponent(JSON.stringify(fileToUpload, null, 2)))
-  );
+  const updatedContent = Buffer.from(
+    JSON.stringify(fileToUpload, null, 2),
+    "utf-8"
+  ).toString("base64");
 
   const updateResponse = await fetch(fileUrl, {
     method: "PUT",
@@ -51,8 +52,8 @@ async function uploadFile(fileToUpload) {
     },
     body: JSON.stringify({
       message: "Updated rr-players.json: Added new entry",
-      content: updatedContent, // Der neue, aktualisierte Inhalt (Base64-encoded)
-      sha: sha, // SHA, um die Datei zu überschreiben
+      content: updatedContent, // The new updated content (Base64-encoded)
+      sha: sha, // SHA to overwrite the file
       branch: branch,
     }),
   });
@@ -70,8 +71,7 @@ async function fetchRooms() {
   const rooms = await response.json();
   let players = [];
 
-  // Iterate through each room and add players to the array
-  await rooms.forEach((room) => {
+  rooms.forEach((room) => {
     players.push(...Object.values(room.players));
   });
 
@@ -83,11 +83,6 @@ async function fetchRooms() {
 }
 
 function insertCurrentPlayerData(oldData, roomsData) {
-  console.log("oldData:");
-  console.log(oldData);
-  console.log("roomsData:");
-  console.log(roomsData);
-
   roomsData.forEach((player) => {
     if (oldData.hasOwnProperty(player.fc)) {
       const oldVR = oldData[player.fc].ev;
@@ -95,13 +90,15 @@ function insertCurrentPlayerData(oldData, roomsData) {
 
       if (Math.abs(oldVR - newVR) > 200) {
         player.banned = true;
-        ban_date = Date.now();
+        player.ban_date = Date.now();
       }
     } else {
       if (player.ev > 9999) {
         player.banned = true;
-        ban_date = Date.now();
-      } else player.banned = false;
+        player.ban_date = Date.now();
+      } else {
+        player.banned = false;
+      }
     }
 
     player.lastupdated = Date.now();
