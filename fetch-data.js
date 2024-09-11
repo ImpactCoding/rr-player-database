@@ -1,4 +1,5 @@
 const fetch = require("node-fetch"); // Import node-fetch
+require("dotenv").config(); // Load environment variables from .env
 
 // Informationen zu deinem Repository und Datei
 const owner = "ImpactCoding"; // GitHub Username oder Organisation
