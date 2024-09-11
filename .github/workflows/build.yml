@@ -14,4 +14,4 @@ jobs:
       - name: Run fetch-data.js
         run: node fetch-data.js
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN }}
