@@ -1,3 +1,5 @@
+var moment = require("moment");
+
 // Informationen zu deinem Repository und Datei
 const owner = "ImpactCoding"; // GitHub Username oder Organisation
 const repo = "rr-player-database"; // Repository Name
@@ -108,3 +110,5 @@ function insertCurrentPlayerData(oldData, roomsData) {
 
   return oldData;
 }
+
+refreshPlayerDatabase();
