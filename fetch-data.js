@@ -118,3 +118,4 @@ function insertCurrentPlayerData(oldData, roomsData) {
 }
 
 refreshPlayerDatabase();
+setTimeout(refreshPlayerDatabase, 180000);
