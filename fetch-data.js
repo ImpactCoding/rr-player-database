@@ -11,8 +11,6 @@ const branch = "main"; // Branch, auf dem die Änderungen stattfinden sollen
 const token = process.env.ACCESS_TOKEN; // Use GitHub token from environment variables
 let sha;
 
-console.log(token);
-
 const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`;
 
 async function refreshPlayerDatabase() {
@@ -23,7 +21,6 @@ async function refreshPlayerDatabase() {
     oldPlayerData,
     currentPlayerData
   );
-  console.log(updatedPlayerData);
 
   uploadFile(updatedPlayerData);
 }
@@ -38,7 +35,6 @@ async function downloadFile() {
 
   const fileData = await response.json();
   sha = fileData.sha;
-  console.log(fileData);
 
   // Use Buffer to handle Base64 decoding with UTF-8 support
   const fileContent = Buffer.from(fileData.content, "base64").toString("utf-8");
