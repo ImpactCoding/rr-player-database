@@ -96,12 +96,12 @@ function insertCurrentPlayerData(oldData, roomsData) {
       const oldVR = oldData[player.fc].ev;
       const newVR = player.ev;
 
-      if (Math.abs(oldVR - newVR) > 200) {
+      if (Math.abs(oldVR - newVR) > 1000) {
         player.banned = true;
         player.ban_date = Date.now();
       }
     } else {
-      if (player.ev > 9999) {
+      if (player.ev > 30000) {
         player.banned = true;
         player.ban_date = Date.now();
       } else {
@@ -117,3 +117,5 @@ function insertCurrentPlayerData(oldData, roomsData) {
 }
 
 refreshPlayerDatabase();
+setTimeout(refreshPlayerDatabase, 180000);
+setTimeout(refreshPlayerDatabase, 360000);
