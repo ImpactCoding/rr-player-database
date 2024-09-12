@@ -1,19 +1,23 @@
-on:
-  schedule:
-    - cron: "* * * * *"
+name: Refresh Player Database
+
+on: push
 
 jobs:
   build-node:
     runs-on: ubuntu-latest
-    container: node:16
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: "16"
+
       - name: Install Node.js dependencies
         run: npm install
 
-      - name: Run fetch-data.js
+      - name: Run the script to fetch and update player data
         run: node fetch-data.js
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Ensure this matches your script
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Referencing the secret here
