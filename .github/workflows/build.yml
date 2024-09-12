@@ -20,4 +20,4 @@ jobs:
       - name: Run the script to fetch and update player data
         run: node fetch-data.js
         env:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }} # Referencing the secret here
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
