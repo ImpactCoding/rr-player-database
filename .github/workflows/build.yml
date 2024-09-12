@@ -1,6 +1,8 @@
 name: Refresh Player Database
 
-on: push
+on:
+  schedule:
+    - cron: "* * * * *" # Runs every hour
 
 jobs:
   build-node:
