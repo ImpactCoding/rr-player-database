@@ -17,9 +17,10 @@ async function refreshPlayerDatabase() {
   const oldPlayerData = await downloadFile();
   console.log(oldPlayerData);
   const currentPlayerData = await fetchRooms();
+  const currentPlayerDataWithMiis = await fetchMiis(currentPlayerData);
   const updatedPlayerData = insertCurrentPlayerData(
     oldPlayerData,
-    currentPlayerData
+    currentPlayerDataWithMiis
   );
 
   uploadFile(updatedPlayerData);
@@ -90,6 +91,34 @@ async function fetchRooms() {
   return players;
 }
 
+async function fetchMiis(playerData) {
+  const miiDataList = [];
+  playerData.forEach((player) => {
+    if (player.mii) miiDataList.push(player.mii[0].data);
+  });
+
+  const mii_data_response = await fetch("https://umapyoi.net/api/v1/mii", {
+    method: "POST",
+    body: JSON.stringify(miiDataList),
+  });
+
+  if (!mii_data_response.ok) {
+    console.log("Error fetching Mii data from umapyoi.net");
+    return;
+  }
+
+  const mii_dict = await mii_data_response.json();
+  console.log(mii_dict);
+
+  var mii_arr = Object.keys(mii_dict).map((key) => mii_dict[key]);
+
+  playerData.forEach((player) => {
+    if (player.mii) player.mii[0].data = mii_dict[player.mii[0].data];
+  });
+
+  return playerData;
+}
+
 function insertCurrentPlayerData(oldData, roomsData) {
   roomsData.forEach((player) => {
     if (oldData.hasOwnProperty(player.fc)) {
@@ -119,28 +148,3 @@ function insertCurrentPlayerData(oldData, roomsData) {
 refreshPlayerDatabase();
 setTimeout(refreshPlayerDatabase, 180000);
 setTimeout(refreshPlayerDatabase, 360000);
-
-// async fetchMiis() {
-//   const miiDataList = [];
-//   this.players.forEach((player) => {
-//     if (player.mii[0].data) miiDataList.push(player.mii[0].data);
-//   });
-
-//   const mii_data_response = await fetch("https://umapyoi.net/api/v1/mii", {
-//     method: "POST",
-//     body: JSON.stringify(miiDataList),
-//   });
-
-//   if (!mii_data_response.ok) {
-//     console.log("Error fetching Mii data from umapyoi.net");
-//     return;
-//   }
-
-//   const mii_dict = await mii_data_response.json();
-
-//   // var mii_arr = Object.keys(mii_dict).map((key) => mii_dict[key]);
-
-//   this.players.forEach((player) => {
-//     player.mii[0].data = mii_dict[player.mii[0].data];
-//   });
-// },
