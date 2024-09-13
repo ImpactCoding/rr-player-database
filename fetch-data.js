@@ -15,7 +15,6 @@ const fileUrl = `https://api.github.com/repos/${owner}/${repo}/contents/${path}`
 
 async function refreshPlayerDatabase() {
   const oldPlayerData = await downloadFile();
-  console.log(oldPlayerData);
   const currentPlayerData = await fetchRooms();
   const currentPlayerDataWithMiis = await fetchMiis(currentPlayerData);
   const updatedPlayerData = insertCurrentPlayerData(
@@ -36,9 +35,6 @@ async function downloadFile() {
 
   const fileData = await response.json();
   sha = fileData.sha;
-
-  console.log(fileData);
-  console.log(token);
 
   // Use Buffer to handle Base64 decoding with UTF-8 support
   const fileContent = Buffer.from(fileData.content, "base64").toString("utf-8");
@@ -108,7 +104,6 @@ async function fetchMiis(playerData) {
   }
 
   const mii_dict = await mii_data_response.json();
-  console.log(mii_dict);
 
   var mii_arr = Object.keys(mii_dict).map((key) => mii_dict[key]);
 
