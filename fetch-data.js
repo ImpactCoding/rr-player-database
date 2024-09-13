@@ -22,7 +22,7 @@ async function refreshPlayerDatabase() {
     currentPlayerDataWithMiis
   );
 
-  updatedPlayerData[last_refreh] = Date.now();
+  updatedPlayerData[last_refresh] = Date.now();
 
   uploadFile(updatedPlayerData);
 }
