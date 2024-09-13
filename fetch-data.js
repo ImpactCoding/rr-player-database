@@ -22,6 +22,8 @@ async function refreshPlayerDatabase() {
     currentPlayerDataWithMiis
   );
 
+  updatedPlayerData[last_refreh] = Date.now();
+
   uploadFile(updatedPlayerData);
 }
 
