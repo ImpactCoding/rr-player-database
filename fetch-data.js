@@ -123,6 +123,10 @@ function insertCurrentPlayerData(oldData, roomsData) {
       const oldVR = oldData[player.fc].ev;
       const newVR = player.ev;
 
+      if (newVR === 30000) {
+        if (!player.first_max_vr) player.first_max_vr = Date.now();
+      }
+
       if (Math.abs(oldVR - newVR) > 1000) {
         player.banned = true;
         player.ban_date = Date.now();
