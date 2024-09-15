@@ -2,7 +2,7 @@ name: Refresh Player Database
 
 on:
   schedule:
-    - cron: "7 0-23 * * *"
+    - cron: "* * * * *"
 
 jobs:
   build-node:

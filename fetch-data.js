@@ -148,5 +148,4 @@ function insertCurrentPlayerData(oldData, roomsData) {
 }
 
 refreshPlayerDatabase();
-let iterations = setInterval(refreshPlayerDatabase, 120000);
-setTimeout(() => clearInterval(iterations), 3600000);
+setTimeout(refreshPlayerDatabase, 120000);
