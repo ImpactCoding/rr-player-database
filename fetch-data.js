@@ -29,20 +29,11 @@ async function refreshPlayerDatabase() {
 }
 
 async function downloadFile() {
-  const response = await fetch(fileUrl, {
-    headers: {
-      Authorization: `token ${token}`,
-      Accept: "application/vnd.github.v3+json",
-    },
-  });
-
-  const fileData = await response.json();
-  sha = fileData.sha;
-
-  // Use Buffer to handle Base64 decoding with UTF-8 support
-  const fileContent = Buffer.from(fileData.content, "base64").toString("utf-8");
-
-  return JSON.parse(fileContent);
+  const response = await fetch(
+    "https://impactcoding.github.io/rr-player-database/rr-players.json"
+  );
+  const playerData = await response.json();
+  return playerData;
 }
 
 async function uploadFile(fileToUpload) {
@@ -149,3 +140,48 @@ function insertCurrentPlayerData(oldData, roomsData) {
 
 refreshPlayerDatabase();
 setTimeout(refreshPlayerDatabase, 120000);
+
+// const response = await fetch(fileUrl, {
+//   headers: {
+//     Authorization: `token ${token}`,
+//     Accept: "application/vnd.github.v3+json",
+//   },
+// });
+
+// const fileData = await response.json();
+// console.log(fileData);
+// sha = fileData.sha;
+
+// // Use Buffer to handle Base64 decoding with UTF-8 support
+// const fileContent = Buffer.from(fileData.content, "base64").toString("utf-8");
+
+// return JSON.parse(fileContent);
+// }
+
+// async function uploadFile(fileToUpload) {
+// const updatedContent = Buffer.from(
+//   JSON.stringify(fileToUpload, null, 2),
+//   "utf-8"
+// ).toString("base64");
+
+// const updateResponse = await fetch(fileUrl, {
+//   method: "PUT",
+//   headers: {
+//     Authorization: `token ${token}`,
+//     Accept: "application/vnd.github.v3+json",
+//     "Content-Type": "application/json",
+//   },
+//   body: JSON.stringify({
+//     message: "Updated rr-players.json: Added new entry",
+//     content: updatedContent, // The new updated content (Base64-encoded)
+//     sha: sha, // SHA to overwrite the file
+//     branch: branch,
+//   }),
+// });
+
+// if (!updateResponse.ok) {
+//   throw new Error(`Error updating file: ${updateResponse.statusText}`);
+// }
+
+// const result = await updateResponse.json();
+// console.log("File updated successfully:", result);
