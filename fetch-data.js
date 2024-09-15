@@ -21,14 +21,23 @@ async function refreshPlayerDatabase() {
     oldPlayerData,
     currentPlayerDataWithMiis
   );
-  console.log(updatedPlayerData);
-
   updatedPlayerData.last_refresh = Date.now();
 
   uploadFile(updatedPlayerData);
 }
 
 async function downloadFile() {
+  // get sha
+  const fileResponse = await fetch(fileUrl, {
+    headers: {
+      Authorization: `token ${token}`,
+      Accept: "application/vnd.github.v3+json",
+    },
+  });
+
+  const fileData = await fileResponse.json();
+  sha = fileData.sha;
+
   const response = await fetch(
     "https://impactcoding.github.io/rr-player-database/rr-players.json"
   );
