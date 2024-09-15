@@ -148,7 +148,8 @@ function insertCurrentPlayerData(oldData, roomsData) {
 }
 
 refreshPlayerDatabase();
-setTimeout(refreshPlayerDatabase, 120000);
+let iterations = setInterval(refreshPlayerDatabase, 180000); // Call the function every 180 seconds (3 minutes)
+setTimeout(() => clearInterval(iterations), 3600000); // Stop after 3600000 ms (1 hour)
 
 // const response = await fetch(fileUrl, {
 //   headers: {
