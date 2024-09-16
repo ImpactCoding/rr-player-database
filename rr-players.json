@@ -1,5 +1,5 @@
 {
-  "last_refresh": 1726530221741,
+  "last_refresh": 1726530401810,
   "2625-9515-5302": {
     "conn_fail": "0",
     "conn_map": "22000000002200222",
@@ -73,11 +73,11 @@
     "lastupdated": 1726276857856
   },
   "4423-8163-5308": {
-    "conn_fail": "1",
+    "conn_fail": "0",
     "conn_map": "2",
     "count": "1",
     "eb": "5000",
-    "ev": "17162",
+    "ev": "17164",
     "fc": "4423-8163-5308",
     "mii": [
       {
@@ -89,7 +89,7 @@
     "pid": "3820",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530041758
+    "lastupdated": 1726530401810
   },
   "2104-5341-0679": {
     "conn_fail": "1",
@@ -689,16 +689,16 @@
   },
   "3350-0745-1848": {
     "conn_fail": "0",
-    "conn_map": "10000",
+    "conn_map": "10000000",
     "count": "2",
     "eb": "5000",
     "ev": "13632",
     "fc": "3350-0745-1848",
     "name": "$megThomas",
     "pid": "2760",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1294-4933-8169": {
     "conn_fail": "4",
@@ -1448,7 +1448,7 @@
   },
   "0214-7484-9567": {
     "conn_fail": "0",
-    "conn_map": "22220",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
     "ev": "8297",
@@ -1463,7 +1463,7 @@
     "pid": "13087",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "4939-2125-2402": {
     "conn_fail": "0",
@@ -1482,7 +1482,7 @@
     "pid": "13362",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0257-6981-5685": {
     "conn_fail": "0",
@@ -2606,11 +2606,11 @@
     "lastupdated": 1726289443831
   },
   "0257-6981-4009": {
-    "conn_fail": "9",
-    "conn_map": "2222222222",
+    "conn_fail": "0",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
-    "ev": "15775",
+    "ev": "15758",
     "fc": "0257-6981-4009",
     "mii": [
       {
@@ -2621,7 +2621,8 @@
     "name": "ika",
     "pid": "10233",
     "suspend": "0",
-    "lastupdated": 1726511257499
+    "banned": false,
+    "lastupdated": 1726530401810
   },
   "4945-2270-1483": {
     "conn_fail": "1",
@@ -2822,22 +2823,23 @@
     "lastupdated": 1726285373745
   },
   "4429-8243-4364": {
-    "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_fail": "1",
+    "conn_map": "22222222222",
     "count": "1",
     "eb": "5024",
-    "ev": "25012",
+    "ev": "25087",
     "fc": "4429-8243-4364",
     "mii": [
       {
-        "data": "data:image/webp;base64,UklGRiADAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSDoBAAABgGvbtrHn/n/S2bbtF0j1t1HLynkA2++Qyk46G71t206+kRN+d9/bpYuICWD/o2bhutRUXbiZPFH1By9ERC8H9VFy+PW8k8r3Hj8J4k+I8yReWM4rcb/mCEohaJYQ50PMpZeIOgLXC3C6QV074bIInolrwnXA9BZwK3ooh3PcmQPK/wH3ECTfYwjK+xZ364Uy3MPtGaKS3nHvKSCDeRK4ZIhxUuYfUPezihPG+rRtCDXWcWaN0Qs0T1UwH9kWgXoYxpjtMmbZloksxBQyoY5niDNHMawcUc4E227wbdqKYjqFR4lm4st4ypiM1eqqmZSaKjVVGjkYyzn97TSHSWsx89uMhTSu0/TntKckEeukcidCCqslUr1kKUMtcZZIYHXAs20sLoG444Xpj/L1akRFPvM9BonKJ2A+F1ZQOCDAAQAAkAsAnQEqMgAyAD7RYKZOqCWjIiQNsQAaCUAalaafV/Mq6gB6ACsSsFPcM9mOxLi+mNXCNFe5OsXf4lWGp9T1Plj/HYhmiz9W6SCwExlspoznnFxAae/I/69rCq7PUKF5BAVq/cAA/vak/2L+DL//DeieSOevbkMPHObtONTP/FgAZtG/gZ+287PJP+us3lSPfk2NsdwMqSBCksGlxFI7XUIvGTLgN94/dPlN1/ZvWU8jaUd64DlmcOTheCgaBqxeEy3Gk4goumuyE6/jPOKYOco9hY43r5sQV2HC62i8YXk85HoR68XlLp1eDoA5BrUEFfFboC+xjxETgLOZi0voyqNvfQYBCmVKj31Bds5OIbT2sxgVDQp6sicaH+YLoOViSnh5zEdLfCFjdvp46wqF/CuOF1EDruKUb//7/Q55G7w40B0XlklVO39TwPzdgQ8SN03+jOdcbvAwxHn9+K6mxv4Z/j1NjAGDqAh3UpgGGvJmq/TtTiIuL7d/PZHH7BCYUAPkPnlWkvvm/0Befzh1xgkfp1JHUOjR+Z+EU+k/izNDqG6Zw/M5hm1m15Z+5nnNuETb6U5H59JyRLkh4uIAAA==",
-        "name": "Marvin"
+        "data": "data:image/webp;base64,UklGRiQDAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSDoBAAABgGvbtrHn/n/S2bbtF0j1t1HLynkA2++Qyk46G71t206+kRN+d9/bpYuICWD/o2bhutRUXbiZPFH1By9ERC8H9VFy+PW8k8r3Hj8J4k+I8yReWM4rcb/mCEohaJYQ50PMpZeIOgLXC3C6QV074bIInolrwnXA9BZwK3ooh3PcmQPK/wH3ECTfYwjK+xZ364Uy3MPtGaKS3nHvKSCDeRK4ZIhxUuYfUPezihPG+rRtCDXWcWaN0Qs0T1UwH9kWgXoYxpjtMmbZloksxBQyoY5niDNHMawcUc4E227wbdqKYjqFR4lm4st4ypiM1eqqmZSaKjVVGjkYyzn97TSHSWsx89uMhTSu0/TntKckEeukcidCCqslUr1kKUMtcZZIYHXAs20sLoG444Xpj/L1akRFPvM9BonKJ2A+F1ZQOCDEAQAA0AsAnQEqMgAyAD7RWKZNqCSjoigYDVEAGglkANAL1k7TYDbd3ZmoD7CU3EvcDk/Udf5KTL9+7zw/wwiPTSYZxIjMZHvtfA6evLJuZiLRocdxcndAi/ZMUWT2WtGzHWBum/NCYhKbYAD++2wfyvqhQvXPqQCSCaVeqE5lQm2ZSSlmFC0C9oMH9XcR85+urnwwz9lPZYsUKwsfMb8h/dwAhxXQHxv+6A5/6JhdtGg3f3nEoaRW3ZQV5lrXOadnv9Psn9pD06/s2WOCoc4RW7TQQkJclHv/E7WxiuByWsgFtuPujMONx9DXT5eTl65ydpO/2aIZMsO+b8nVF4MQDjHhJ3+ty7MKc2kN911Vu1LDovB7t6tEII+gJkuSejRn+LEok3ISQkK/kbYeeu4SDRgnZVHppt6jo4mHuXcAqivC13vVcQi8Dv9ta//9/oc8jITmXXVSYVJmjzVkH3kUTg5iY/14Sl0PzumcGTlX7cb4viSctIKFsVxrg6cLkm26LxLTk87g88F0MuvC064P7owHtBJuNxR2mKIn6S9NHiE57PcwEQtWhLHNFD40TviPWOsr9BtvwRWLqovPRkK9dPCkLT5IAAA=",
+        "name": "Flαg★Mar"
       }
     ],
-    "name": "Marvin",
+    "name": "Flαg★Mar",
     "pid": "600802876",
     "suspend": "0",
-    "lastupdated": 1726289857380
+    "banned": false,
+    "lastupdated": 1726530401810
   },
   "3914-4234-7439": {
     "conn_fail": "1",
@@ -2880,7 +2882,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "6546",
+    "ev": "6520",
     "fc": "2920-5778-9538",
     "mii": [
       {
@@ -2892,7 +2894,7 @@
     "pid": "13410",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "4337-9170-8474": {
     "conn_fail": "0",
@@ -2950,7 +2952,7 @@
   },
   "4215-0932-0409": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "21222220",
     "count": "1",
     "eb": "5000",
     "ev": "7531",
@@ -2963,9 +2965,9 @@
     ],
     "name": "Hyrex",
     "pid": "602525401",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "3742-6301-9259": {
     "conn_fail": "0",
@@ -3132,7 +3134,7 @@
   },
   "2662-8798-1581": {
     "conn_fail": "0",
-    "conn_map": "22220",
+    "conn_map": "222222",
     "count": "1",
     "eb": "5000",
     "ev": "12486",
@@ -3145,9 +3147,9 @@
     ],
     "name": "",
     "pid": "9229",
-    "suspend": "0",
+    "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0091-9248-0729": {
     "conn_fail": "0",
@@ -3394,7 +3396,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "11095",
+    "ev": "11070",
     "fc": "0901-9432-1194",
     "mii": [
       {
@@ -3406,7 +3408,7 @@
     "pid": "7978",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1417-3393-4213": {
     "conn_fail": "0",
@@ -3449,7 +3451,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "18240",
+    "ev": "18241",
     "fc": "4644-5662-4697",
     "mii": [
       {
@@ -3461,7 +3463,7 @@
     "pid": "600156729",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1717-9870-0209": {
     "conn_fail": "0",
@@ -4733,7 +4735,7 @@
   },
   "4945-2186-6758": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "22222220",
     "count": "1",
     "eb": "5000",
     "ev": "12270",
@@ -4746,9 +4748,9 @@
     ],
     "name": "«αητz»",
     "pid": "600627718",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "3994-3197-0534": {
     "conn_fail": "1",
@@ -4861,10 +4863,10 @@
   },
   "4859-3316-3023": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "9999",
-    "ev": "13207",
+    "ev": "13201",
     "fc": "4859-3316-3023",
     "mii": [
       {
@@ -4876,7 +4878,7 @@
     "pid": "601858575",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0042-9497-6739": {
     "conn_fail": "0",
@@ -5061,7 +5063,7 @@
   },
   "4086-2401-4654": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "22222220",
     "count": "1",
     "eb": "9999",
     "ev": "18302",
@@ -5074,9 +5076,9 @@
     ],
     "name": "phreshboy",
     "pid": "602121534",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "4294-9674-3126": {
     "conn_fail": "0",
@@ -6964,7 +6966,7 @@
   },
   "2711-8548-1352": {
     "conn_fail": "0",
-    "conn_map": "22220",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
     "ev": "12824",
@@ -6979,7 +6981,7 @@
     "pid": "602541704",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0558-3458-5617": {
     "conn_fail": "0",
@@ -10383,7 +10385,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "11016",
+    "ev": "11063",
     "fc": "0644-2451-7394",
     "mii": [
       {
@@ -10395,14 +10397,14 @@
     "pid": "7954",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1288-4903-1609": {
-    "conn_fail": "0",
+    "conn_fail": "1",
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "10768",
+    "ev": "10782",
     "fc": "1288-4903-1609",
     "mii": [
       {
@@ -10414,7 +10416,7 @@
     "pid": "12729",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "3478-9235-4582": {
     "conn_fail": "0",
@@ -12229,10 +12231,10 @@
   },
   "0607-3202-3441": {
     "conn_fail": "0",
-    "conn_map": "222222",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
-    "ev": "9033",
+    "ev": "9008",
     "fc": "0607-3202-3441",
     "mii": [
       {
@@ -12244,7 +12246,7 @@
     "pid": "602481297",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726528961587
+    "lastupdated": 1726530401810
   },
   "0993-8676-5393": {
     "conn_fail": "1",
@@ -12321,10 +12323,10 @@
   },
   "0257-6981-0812": {
     "conn_fail": "1",
-    "conn_map": "22222",
+    "conn_map": "222222",
     "count": "1",
     "eb": "5000",
-    "ev": "13285",
+    "ev": "13294",
     "fc": "0257-6981-0812",
     "mii": [
       {
@@ -12336,7 +12338,7 @@
     "pid": "7036",
     "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "5417-6759-2679": {
     "conn_fail": "0",
@@ -13446,7 +13448,7 @@
   },
   "0816-0439-0706": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "22222220",
     "count": "1",
     "eb": "5000",
     "ev": "5384",
@@ -13459,9 +13461,9 @@
     ],
     "name": "Sam",
     "pid": "12082",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0730-1444-9507": {
     "conn_fail": "5",
@@ -13722,7 +13724,7 @@
   },
   "1460-2890-0698": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "5000",
     "ev": "7097",
@@ -13737,7 +13739,7 @@
     "pid": "12634",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1460-2890-1304": {
     "conn_fail": "0",
@@ -14165,7 +14167,7 @@
   },
   "1932-7354-2087": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "22222220",
     "count": "1",
     "eb": "5000",
     "ev": "10260",
@@ -14178,9 +14180,9 @@
     ],
     "name": "I AM STEVE",
     "pid": "13767",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "3994-3195-8693": {
     "conn_fail": "0",
@@ -14637,10 +14639,10 @@
   },
   "4601-6309-3017": {
     "conn_fail": "8",
-    "conn_map": "22222",
+    "conn_map": "222222",
     "count": "1",
     "eb": "5000",
-    "ev": "20423",
+    "ev": "20437",
     "fc": "4601-6309-3017",
     "mii": [
       {
@@ -14652,7 +14654,7 @@
     "pid": "601592345",
     "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "4509-7157-7620": {
     "conn_fail": "6",
@@ -15719,10 +15721,10 @@
   },
   "2147-4837-5196": {
     "conn_fail": "0",
-    "conn_map": "22222",
+    "conn_map": "222222",
     "count": "1",
     "eb": "5000",
-    "ev": "6493",
+    "ev": "6517",
     "fc": "2147-4837-5196",
     "mii": [
       {
@@ -15734,7 +15736,7 @@
     "pid": "10396",
     "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0478-4667-8308": {
     "conn_fail": "0",
@@ -16519,10 +16521,10 @@
   },
   "0091-9000-1155": {
     "conn_fail": "0",
-    "conn_map": "222222",
+    "conn_map": "2",
     "count": "1",
     "eb": "4981",
-    "ev": "5505",
+    "ev": "5506",
     "fc": "0091-9000-1155",
     "mii": [
       {
@@ -16532,8 +16534,9 @@
     ],
     "name": "kimbo",
     "pid": "600066563",
-    "suspend": "0",
-    "lastupdated": 1726465774016
+    "suspend": "1",
+    "banned": false,
+    "lastupdated": 1726530401810
   },
   "3221-2254-9742": {
     "conn_fail": "0",
@@ -16718,10 +16721,10 @@
   },
   "3435-9739-7124": {
     "conn_fail": "0",
-    "conn_map": "22222",
+    "conn_map": "222222",
     "count": "1",
     "eb": "5000",
-    "ev": "6210",
+    "ev": "6214",
     "fc": "3435-9739-7124",
     "mii": [
       {
@@ -16733,7 +16736,7 @@
     "pid": "13444",
     "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "2791-7292-5662": {
     "conn_fail": "0",
@@ -17464,7 +17467,7 @@
     "pid": "13823",
     "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "3350-0746-1801": {
     "conn_fail": "0",
@@ -17871,7 +17874,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5874",
-    "ev": "19387",
+    "ev": "19531",
     "fc": "4212-7247-3271",
     "mii": [
       {
@@ -17882,7 +17885,8 @@
     "name": "Flαg♪Ent",
     "pid": "365678263",
     "suspend": "0",
-    "lastupdated": 1726446255685
+    "banned": false,
+    "lastupdated": 1726530401810
   },
   "1932-7353-0417": {
     "conn_fail": "0",
@@ -19280,7 +19284,7 @@
   },
   "1546-1883-5985": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "22222220",
     "count": "1",
     "eb": "5000",
     "ev": "6233",
@@ -19293,9 +19297,9 @@
     ],
     "name": "4DRMitch",
     "pid": "13329",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "4767-4138-3041": {
     "conn_fail": "0",
@@ -19629,10 +19633,10 @@
   },
   "2840-6896-5043": {
     "conn_fail": "0",
-    "conn_map": "222",
+    "conn_map": "",
     "count": "1",
     "eb": "4802",
-    "ev": "4984",
+    "ev": "5020",
     "fc": "2840-6896-5043",
     "mii": [
       {
@@ -19643,7 +19647,8 @@
     "name": "げん",
     "pid": "601123507",
     "suspend": "1",
-    "lastupdated": 1726471970908
+    "banned": false,
+    "lastupdated": 1726530401810
   },
   "1036-8052-4621": {
     "conn_fail": "0",
@@ -20355,7 +20360,7 @@
     "pid": "14804",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "2625-9490-4133": {
     "conn_fail": "0",
@@ -20637,7 +20642,7 @@
   },
   "0521-3988-6931": {
     "conn_fail": "0",
-    "conn_map": "22220",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
     "ev": "17771",
@@ -20652,7 +20657,7 @@
     "pid": "600279379",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "4859-3361-3662": {
     "conn_fail": "6",
@@ -20692,10 +20697,10 @@
   },
   "4423-8168-4643": {
     "conn_fail": "12",
-    "conn_map": "22222222322",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "5000",
-    "ev": "6525",
+    "ev": "6515",
     "fc": "4423-8168-4643",
     "mii": [
       {
@@ -20707,7 +20712,7 @@
     "pid": "53155",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "5239-8601-2704": {
     "conn_fail": "0",
@@ -22799,10 +22804,10 @@
   },
   "1245-5405-9385": {
     "conn_fail": "0",
-    "conn_map": "22222",
+    "conn_map": "222222",
     "count": "1",
     "eb": "5000",
-    "ev": "11220",
+    "ev": "11196",
     "fc": "1245-5405-9385",
     "mii": [
       {
@@ -22814,14 +22819,14 @@
     "pid": "7801",
     "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1073-7419-2455": {
     "conn_fail": "0",
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "7104",
+    "ev": "7092",
     "fc": "1073-7419-2455",
     "mii": [
       {
@@ -22833,7 +22838,7 @@
     "pid": "10055",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1638-1019-1053": {
     "conn_fail": "0",
@@ -22855,10 +22860,10 @@
   },
   "0429-4968-7807": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "5000",
-    "ev": "5431",
+    "ev": "5451",
     "fc": "0429-4968-7807",
     "mii": [
       {
@@ -22870,7 +22875,7 @@
     "pid": "14847",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0730-1444-9536": {
     "conn_fail": "1",
@@ -22968,10 +22973,10 @@
   },
   "0644-2452-4297": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "5000",
-    "ev": "4604",
+    "ev": "4575",
     "fc": "0644-2452-4297",
     "mii": [
       {
@@ -22981,9 +22986,9 @@
     ],
     "name": "lared",
     "pid": "14857",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "4515-7375-7960": {
     "conn_fail": "1",
@@ -23209,10 +23214,10 @@
   },
   "2018-6347-7773": {
     "conn_fail": "0",
-    "conn_map": "22220",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
-    "ev": "5742",
+    "ev": "5754",
     "fc": "2018-6347-7773",
     "mii": [
       {
@@ -23222,9 +23227,9 @@
     ],
     "name": "?",
     "pid": "14861",
-    "suspend": "0",
+    "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1595-1463-7450": {
     "conn_fail": "0",
@@ -23266,10 +23271,10 @@
   },
   "3006-4772-3801": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "5000",
-    "ev": "7681",
+    "ev": "7751",
     "fc": "3006-4772-3801",
     "mii": [
       {
@@ -23281,7 +23286,7 @@
     "pid": "13081",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0816-0441-9966": {
     "conn_fail": "0",
@@ -23323,10 +23328,10 @@
   },
   "0134-8518-0517": {
     "conn_fail": "1",
-    "conn_map": "22222222222",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "5000",
-    "ev": "10038",
+    "ev": "10045",
     "fc": "0134-8518-0517",
     "mii": [
       {
@@ -23338,7 +23343,7 @@
     "pid": "600278629",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "4601-6393-3956": {
     "conn_fail": "3",
@@ -23494,7 +23499,7 @@
   },
   "4810-3635-0565": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "22222220",
     "count": "1",
     "eb": "5000",
     "ev": "7584",
@@ -23507,9 +23512,9 @@
     ],
     "name": "ryhs",
     "pid": "13413",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "3092-3769-3394": {
     "conn_fail": "0",
@@ -23627,10 +23632,10 @@
   },
   "4343-9175-5733": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "5000",
-    "ev": "15867",
+    "ev": "15902",
     "fc": "4343-9175-5733",
     "mii": [
       {
@@ -23642,7 +23647,7 @@
     "pid": "600058837",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0950-9024-2696": {
     "conn_fail": "0",
@@ -23665,10 +23670,10 @@
   },
   "4386-8814-8508": {
     "conn_fail": "1",
-    "conn_map": "22222222222",
+    "conn_map": "22222222",
     "count": "1",
     "eb": "5000",
-    "ev": "7289",
+    "ev": "7312",
     "fc": "4386-8814-8508",
     "mii": [
       {
@@ -23680,14 +23685,14 @@
     "pid": "601484316",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "2540-0550-6332": {
     "conn_fail": "0",
     "conn_map": "22222222222",
     "count": "1",
     "eb": "8511",
-    "ev": "19376",
+    "ev": "19393",
     "fc": "2540-0550-6332",
     "mii": [
       {
@@ -23699,14 +23704,14 @@
     "pid": "602435868",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "1466-2995-5684": {
     "conn_fail": "0",
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "14141",
+    "ev": "14200",
     "fc": "1466-2995-5684",
     "mii": [
       {
@@ -23718,7 +23723,7 @@
     "pid": "601067620",
     "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "2920-5779-1141": {
     "conn_fail": "1",
@@ -23760,10 +23765,10 @@
   },
   "3613-7971-2470": {
     "conn_fail": "0",
-    "conn_map": "22222",
+    "conn_map": "222222",
     "count": "1",
     "eb": "5000",
-    "ev": "15300",
+    "ev": "15318",
     "fc": "3613-7971-2470",
     "mii": [
       {
@@ -23775,7 +23780,7 @@
     "pid": "602459606",
     "suspend": "1",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   },
   "0220-7531-2347": {
     "conn_fail": "0",
@@ -23798,7 +23803,7 @@
   },
   "3006-4771-8059": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "22222220",
     "count": "1",
     "eb": "5000",
     "ev": "11180",
@@ -23811,8 +23816,8 @@
     ],
     "name": "erbal667",
     "pid": "7339",
-    "suspend": "1",
+    "suspend": "0",
     "banned": false,
-    "lastupdated": 1726530221741
+    "lastupdated": 1726530401810
   }
 }
