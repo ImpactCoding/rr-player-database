@@ -123,24 +123,26 @@ function insertCurrentPlayerData(oldData, roomsData) {
       const oldVR = oldData[player.fc].ev;
       const newVR = player.ev;
 
-      if (newVR === 30000) {
-        if (!player.first_max_vr) player.first_max_vr = Date.now();
+      if (newVR == 30000 && !player.first_max_vr) {
+        player.first_max_vr = Date.now();
       }
 
       if (Math.abs(oldVR - newVR) > 1000) {
         player.banned = true;
         player.ban_date = Date.now();
-      }
+      } else player.banned = false;
     } else {
-      if (player.ev > 30000) {
-        player.banned = true;
-        player.ban_date = Date.now();
-      } else {
-        player.banned = false;
+      if (!player.banned) {
+        if (player.ev > 30000) {
+          player.banned = true;
+          player.ban_date = Date.now();
+        } else {
+          player.banned = false;
+        }
       }
     }
 
-    player.lastupdated = Date.now();
+    if (!player.banned) player.lastupdated = Date.now();
     oldData[player.fc] = player;
   });
 
@@ -150,48 +152,3 @@ function insertCurrentPlayerData(oldData, roomsData) {
 refreshPlayerDatabase();
 let iterations = setInterval(refreshPlayerDatabase, 180000); // Call the function every 180 seconds (3 minutes)
 setTimeout(() => clearInterval(iterations), 3600000); // Stop after 3600000 ms (1 hour)
-
-// const response = await fetch(fileUrl, {
-//   headers: {
-//     Authorization: `token ${token}`,
-//     Accept: "application/vnd.github.v3+json",
-//   },
-// });
-
-// const fileData = await response.json();
-// console.log(fileData);
-// sha = fileData.sha;
-
-// // Use Buffer to handle Base64 decoding with UTF-8 support
-// const fileContent = Buffer.from(fileData.content, "base64").toString("utf-8");
-
-// return JSON.parse(fileContent);
-// }
-
-// async function uploadFile(fileToUpload) {
-// const updatedContent = Buffer.from(
-//   JSON.stringify(fileToUpload, null, 2),
-//   "utf-8"
-// ).toString("base64");
-
-// const updateResponse = await fetch(fileUrl, {
-//   method: "PUT",
-//   headers: {
-//     Authorization: `token ${token}`,
-//     Accept: "application/vnd.github.v3+json",
-//     "Content-Type": "application/json",
-//   },
-//   body: JSON.stringify({
-//     message: "Updated rr-players.json: Added new entry",
-//     content: updatedContent, // The new updated content (Base64-encoded)
-//     sha: sha, // SHA to overwrite the file
-//     branch: branch,
-//   }),
-// });
-
-// if (!updateResponse.ok) {
-//   throw new Error(`Error updating file: ${updateResponse.statusText}`);
-// }
-
-// const result = await updateResponse.json();
-// console.log("File updated successfully:", result);
