@@ -124,7 +124,7 @@ function insertCurrentPlayerData(oldData, roomsData) {
         const oldVR = oldData[player.fc].ev;
         const newVR = player.ev;
 
-        if (newVR == 30000 && !player.first_max_vr) {
+        if (newVR == 30000 && !oldData[player].first_max_vr) {
           player.first_max_vr = Date.now();
         }
 
