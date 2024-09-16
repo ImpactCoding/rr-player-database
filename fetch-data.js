@@ -120,25 +120,25 @@ async function fetchMiis(playerData) {
 function insertCurrentPlayerData(oldData, roomsData) {
   roomsData.forEach((player) => {
     if (oldData.hasOwnProperty(player.fc)) {
-      const oldVR = oldData[player.fc].ev;
-      const newVR = player.ev;
-
-      if (newVR == 30000 && !player.first_max_vr) {
-        player.first_max_vr = Date.now();
-      }
-
-      if (Math.abs(oldVR - newVR) > 1000) {
-        player.banned = true;
-        player.ban_date = Date.now();
-      } else player.banned = false;
-    } else {
       if (!player.banned) {
-        if (player.ev > 30000) {
+        const oldVR = oldData[player.fc].ev;
+        const newVR = player.ev;
+
+        if (newVR == 30000 && !player.first_max_vr) {
+          player.first_max_vr = Date.now();
+        }
+
+        if (Math.abs(oldVR - newVR) > 1000) {
           player.banned = true;
           player.ban_date = Date.now();
-        } else {
-          player.banned = false;
-        }
+        } else player.banned = false;
+      }
+    } else {
+      if (player.ev > 30000) {
+        player.banned = true;
+        player.ban_date = Date.now();
+      } else {
+        player.banned = false;
       }
     }
 
