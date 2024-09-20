@@ -139,7 +139,7 @@ function insertCurrentPlayerData(oldData, roomsData) {
         oldData[player.fc] = player;
       }
     } else {
-      if (player.ev < 30000) {
+      if (player.ev < 8000) {
         player.banned = false;
         player.first_max_vr = "";
         player.lastupdated = Date.now();
