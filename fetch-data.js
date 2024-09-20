@@ -130,6 +130,7 @@ function insertCurrentPlayerData(oldData, roomsData) {
         if (player.first_max_vr != "" && newVR == 30000) {
           player.first_max_vr = "";
         }
+        player.lastupdated = Date.now();
 
         if (Math.abs(oldVR - newVR) > 1000) {
           player.banned = true;
