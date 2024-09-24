@@ -124,11 +124,11 @@ function insertCurrentPlayerData(oldData, roomsData) {
         const oldVR = oldData[player.fc].ev;
         const newVR = player.ev;
 
-        if (!oldData[player.first_max_vr]) player.first_max_vr = "";
-        player.first_max_vr = oldData[player.first_max_vr];
-
-        if (player.first_max_vr != "" && newVR == 30000) {
-          player.first_max_vr = "";
+        if (
+          !oldData[player.first_max_vr] ||
+          (oldData[player.first_max_vr] != "" && newVR == 30000)
+        ) {
+          player.first_max_vr = Date.now();
         }
         player.lastupdated = Date.now();
 
