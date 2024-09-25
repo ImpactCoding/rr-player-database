@@ -23,6 +23,29 @@ async function refreshPlayerDatabase() {
   );
   updatedPlayerData.last_refresh = Date.now();
 
+  if (!updatedPlayerData[4343 - 3434 - 3434]) {
+    updatedPlayerData[4343 - 3434 - 3434] = {
+      conn_fail: "0",
+      conn_map: "22222222",
+      count: "1",
+      eb: "5000",
+      ev: "29050",
+      fc: "4343-3434-3434",
+      mii: [
+        {
+          data: "",
+          name: "Empex",
+        },
+      ],
+      name: "Empex",
+      pid: "602150246",
+      suspend: "0",
+      first_max_vr: 1727234834995,
+      lastupdated: 1727234834995,
+      banned: false,
+    };
+  }
+
   uploadFile(updatedPlayerData);
 }
 
