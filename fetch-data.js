@@ -23,26 +23,6 @@ async function refreshPlayerDatabase() {
   );
   updatedPlayerData.last_refresh = Date.now();
 
-  // updatedPlayerData[0003 - 0000 - 0039] = {
-  //   conn_fail: "0",
-  //   conn_map: "22222222",
-  //   count: "1",
-  //   eb: "5000",
-  //   ev: "19000",
-  //   fc: "0003-0000-0039",
-  //   mii: [
-  //     {
-  //       data: "",
-  //       name: "",
-  //     },
-  //   ],
-  //   name: "",
-  //   pid: "602150246",
-  //   suspend: "0",
-  //   lastupdated: 1727234834995,
-  //   banned: false,
-  // };
-
   uploadFile(updatedPlayerData);
 }
 
@@ -167,6 +147,17 @@ function insertCurrentPlayerData(oldData, roomsData) {
       }
     }
   });
+
+  const currentDate = Date.now();
+
+  for (var key in oldData) {
+    if (
+      currentDate - Number(oldData[key].lastupdated) > 604800000 &&
+      oldData[key].ev < 10000
+    ) {
+      delete oldData[key];
+    }
+  }
 
   return oldData;
 }
