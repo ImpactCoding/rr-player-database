@@ -1,5 +1,5 @@
 {
-  "last_refresh": 1728408382984,
+  "last_refresh": 1728408563109,
   "2625-9515-5302": {
     "conn_fail": "0",
     "conn_map": "2020000022200220220020",
@@ -438,10 +438,10 @@
   },
   "5460-6293-7296": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "5110",
-    "ev": "13275",
+    "ev": "13276",
     "fc": "5460-6293-7296",
     "mii": [
       {
@@ -451,9 +451,9 @@
     ],
     "name": "ToadsPitCr",
     "pid": "602090704",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3049-4267-9168": {
@@ -618,10 +618,10 @@
   },
   "0736-1618-0042": {
     "conn_fail": "1",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "10663",
+    "ev": "10706",
     "fc": "0736-1618-0042",
     "mii": [
       {
@@ -631,9 +631,9 @@
     ],
     "name": "Mando 6285",
     "pid": "601736010",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "0000-0004-2314": {
@@ -796,10 +796,10 @@
   },
   "2061-5844-3166": {
     "conn_fail": "0",
-    "conn_map": "222222222",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "20705",
+    "ev": "20743",
     "fc": "2061-5844-3166",
     "mii": [
       {
@@ -810,8 +810,8 @@
     "name": "Lepke",
     "pid": "12958",
     "suspend": "1",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "0000-0000-1185": {
@@ -1409,7 +1409,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "19007",
+    "ev": "19018",
     "fc": "1331-4398-9228",
     "mii": [
       {
@@ -1419,9 +1419,9 @@
     ],
     "name": "Diesel",
     "pid": "3052",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3779-5716-4056": {
@@ -2873,22 +2873,16 @@
   },
   "1159-6412-6412": {
     "conn_fail": "0",
-    "conn_map": "2222222",
+    "conn_map": "1",
     "count": "1",
     "eb": "5000",
-    "ev": "13110",
+    "ev": "13091",
     "fc": "1159-6412-6412",
-    "mii": [
-      {
-        "data": "data:image/webp;base64,UklGRqQCAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSCkBAAABgIL//znnN9u2bW9p2apLVro8m22V7dpse+0S09gOQ+Jh/v8/319bi4gJYP/WlsFhYcGWPOVPyjV6vUY+lc9LmtTw8adBmsZF29OH4Kc2OouBD9EDZN0fwD6inDeEKZ/EYuEDOm9BkfqGeUulaP8AtxNYHaGOrHAuapTaBRegRWkDcDFGlDEGF/WOeo/CJRhQhkTc+Ad8AneGu8AN48ZxfneoO3+cswqlcsZZ7qJ2LXFsDbXGCCdQExQtqBaKIhOonCL9BfOWReGrx+h8KNgcZo6R+uwh9nxomEPtyr2w+5VaB0YfXiLZ/m1bUhLOOM2V/SYrZLxWP3/8+VLNieflh8BLDz4aPgTXcGF7Jmzfkof8N2EvKTyMfIgc4MBBLkbhQFdgEGMoEAcAVlA4IFQBAABQCQCdASoyADIAPslYpEunpaOhs/ZpWPAZCWQAze9NfEcc+kD1AbYC7gAcXtZdXGG1789f8DSMPMYm9Y8MuiY7UhoomYkPco72p2GLpzqo/OVUkAD+/EPc/7EN1bxT4DuSAzsEStIi4Y5/1o3YGWZoj/fRflIjA2n0/DWbYskote0T2rJwwJLCFoCFpZIP61CiqN9Hj3HmqFYNlO45F4dafKwISP1s99+3xfB+8QxFXDhbTaeB1Ql635FNbEBSxqM92bt4LF3FOMnps/GMoamZzlHJ7//6kgFXqJx8JZQDMb4QOI8XsIVQPMuFXSqDwIPv5EdjE4v+5+962ZgN1f2m+FSteZp09zNLXizZmjur8BfzKixOypKofL85cmhYzGvQI1aMwJi5bTrOejPi/EK59osNNXCn4TGhhzpwsGUhTzFTDcqNoE/yFgDf5D1OgDs6kAAA",
-        "name": "sorry"
-      }
-    ],
     "name": "sorry",
     "pid": "9420",
     "suspend": "0",
-    "first_max_vr": 1728367777210,
-    "lastupdated": 1728367777210,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "4859-3166-1934": {
@@ -5566,9 +5560,9 @@
     ],
     "name": "DPC99",
     "pid": "602053895",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "1503-2386-5322": {
@@ -7695,7 +7689,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "6146",
-    "ev": "25039",
+    "ev": "25056",
     "fc": "1466-2910-4697",
     "mii": [
       {
@@ -7705,9 +7699,9 @@
     ],
     "name": "idiot",
     "pid": "600216633",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "0816-0438-1460": {
@@ -7946,23 +7940,23 @@
     "banned": false
   },
   "5417-6759-2679": {
-    "conn_fail": "1",
-    "conn_map": "222222",
+    "conn_fail": "0",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
     "ev": "13171",
     "fc": "5417-6759-2679",
     "mii": [
       {
-        "data": "data:image/webp;base64,UklGRl4DAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSCUBAAABkHNb27FHT2zbNjvbTn4AO9WprDqlVdm2bdt2xmacXPd4uoiYAPaflFNURor3R+A2tVK+oxJW0Lv94mKsJFzzHmUrU26QYdfHq7NcReHU06uHX5RZMKXcs6tP3cYQ+eWruyszV49/lzV9dXdVERFzRRyHqKVqQDRRtSCSqFIQKsc0J+oI5ndGcRHIsBaXuEsLBjZ5h3tnjoq6IoxGpVMUo6ooKlEVFBU/QetPUIWqpKhAFVKUo+IpklFxFLGoUIpIlAeFJ8qWwhkl3oPrEUexWFwsgyfhkn4lCbgEXBouA9eN64ZJHOIOJVD6r3Gv9VE6FFoooVXcEDeKhX5BvXVneN8lzJI3oxQPqj14ykFtkDijTnlKKqMX23jKAh+d29VTvzg9DQBWUDggEgIAAJALAJ0BKjIAMgA+0VikTygkoyIoGAypABoJZQDRhqOrnw+ppSppPjZe5muQbEQRPUlzFIVvf9Bco8aJip9y6UecUzW7yT0R/ALXh9bi0b9oXbE0dCHGQnt1ZO5OpuVMNG6xRiMAAP78Q9z63qHH68esTz/x2rWEV91SRfzm+G/7ZPPSWA4l4zRtYlIt2HweGzPe7dD0wv3yEajgQ+SZr9MVI2fe3zl2gqBEDPqvPwUkc4sCo94hEt78N+WtYyly+ajC97Ysx3mc/PFeuZq0aeunpMJQh4K8L5axUcTuOvWOJFEft7f+9Z8fOMRpivGNhEqF7mdcUNMC/8Rga74INoPX7/LVr72bDJWvUtMq2RLvHmZRyEdnulHqzDg0Li+V+dSRX7WAsrjTq/CV/AJzg6JGfliunCTtpotLRfaVtvoVvvf4xag1+IcqPmnGW8B1t5K2djV7Mher3NVQbh6MVXrM0Xa97Ny6t1xjcZPhWlAPqfTshI1Ib+RrcnyiZ3F8nuwKNNG9muC7prWWzhpmRU1FtXGuS5aJSd0ckEyYAXvKdguU5NsqhqNSqJn0EhoGX/AXMeA3P830zewYTr6eOA1np36hPOi4txxzc5/qcqo86pbeoL1v/1wnWPwwa6pmgi1hxf8o+zrh4WO/cjxIG5EUO2v6bJ8N87VXp4Br600GLI8xR17//4N5S+Z7YcGjAAAA",
-        "name": "EpsilonDan"
+        "data": "data:image/webp;base64,UklGRjADAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSEQBAAABgEJt2/Lk3YY7xFWkWXR3S070THS3xiG5Z6K7W3SSu7vDf/43sf95abSImAD6D3WMKGweWF0daK2McPwbxop9lX9V9yuMcvr8U9Z4mq8XsuhkYKeFiKGNoW0GiUgGRwroBlGDOpz3O+rdG9fA8AaYbh43r0MZb3A3RlS8ilPjUYUsWAjS9Un0gez3JPYdMb6KhBqCKWLRIsyQzBDE4UTmxAHhsbn7LXC24YEwd/Z5FEh2MkcQuT4JRBPY5+PvZbJgBqpRohFkvSGxYY0JUCSUAEw5i5Zj+mX6MWsya5htmW3MuMw4pl6mCRMrE4OxXGHm6xttN9fMvGKJoSSFucD/WMuxfwGzkkToOt5xIdcR00ZcyW6D6whu2Z1FpJsybYiIsrstcWRlQeT7ZdqHJ5GFFQk3sMYakrfe1LJlLef3o+XHTxtWUDggxgEAALALAJ0BKjIAMgA+0VakTagkIyIqFm3JABoJYwDNVict4oRtYQ/V3PjkBAC0ZlZy9Cf8IdmM4oVHj5VjFJHlmt1x9Q19w8GOp7EGiIM9plADVOD4O0o8qz4qnWlLXrbKxnCf1tzaAAD+/EPc/3QmIIL4t0TNCiXmr/zoFzakPdzPCThpW4vQ9pmG21iS/ql66fDLG6U7/fXZsuMqdNtmjD1e9rRDmgAyt13RfuGuOQzan+ry4++wbUxY5RSD0LuE2mlWDSJFttyS6pZPA8ijsV/BNjJP29hBYhFBo+VEmVtfcDqdpjsCuPIO8d1ssPCryVegNMunO8Vlq+IdGVQrhmf20hoHgA7wyCfsTHlLM/RM2XTy6vd/AGGz8NJonAwm+WZ45GhI/KuW/Ws0uoRv/vt79tA55f9raHRt1iNCCW/qkwGeZTNeR4/CJC2WuNglyduDLT49IVZW2eVkomex1x8yjUF0SyUQP9S+NVPCo7hUNzyLRP2MSqBadfwdaSrGG+WidsnUNdv8kH0OBEjzaAyf6V8bOaaqBeg9eAdPIXmO2fOHFbMD1J10iQQZw4ZskjhkUHNUMRMKc7kD877iTs/1WxCmYAA=",
+        "name": "Firefly"
       }
     ],
-    "name": "EpsilonDan",
+    "name": "Firefly",
     "pid": "601713383",
-    "suspend": "0",
-    "first_max_vr": 1728165022336,
-    "lastupdated": 1728165022336,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "2319-2823-7623": {
@@ -9943,7 +9937,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "16525",
+    "ev": "16511",
     "fc": "5368-7091-7083",
     "mii": [
       {
@@ -9953,9 +9947,9 @@
     ],
     "name": "forsen",
     "pid": "5083",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "5202-9110-2833": {
@@ -10361,10 +10355,10 @@
   },
   "5325-7594-7381": {
     "conn_fail": "0",
-    "conn_map": "222222222",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "20390",
+    "ev": "20386",
     "fc": "5325-7594-7381",
     "mii": [
       {
@@ -10375,8 +10369,8 @@
     "name": "w€●M™",
     "pid": "2677",
     "suspend": "1",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "1889-7856-5733": {
@@ -11294,11 +11288,11 @@
     "banned": false
   },
   "4558-6863-3914": {
-    "conn_fail": "1",
-    "conn_map": "22222222",
+    "conn_fail": "0",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "8924",
+    "ev": "8875",
     "fc": "4558-6863-3914",
     "mii": [
       {
@@ -11309,8 +11303,8 @@
     "name": "texsti3295",
     "pid": "602100538",
     "suspend": "1",
-    "first_max_vr": 1728362314292,
-    "lastupdated": 1728362314292,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3779-5712-9863": {
@@ -11942,10 +11936,10 @@
   },
   "2497-1061-6665": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "26179",
+    "ev": "26161",
     "fc": "2497-1061-6665",
     "mii": [
       {
@@ -11955,17 +11949,17 @@
     ],
     "name": "BadAtGames",
     "pid": "602513497",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "4384-5792-3789": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "9999",
-    "ev": "23262",
+    "ev": "23300",
     "fc": "4384-5792-3789",
     "mii": [
       {
@@ -11975,9 +11969,9 @@
     ],
     "name": "★ξsταrοssα",
     "pid": "371259597",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "1245-5409-9364": {
@@ -12992,7 +12986,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "21034",
+    "ev": "21049",
     "fc": "1335-2157-0927",
     "mii": [
       {
@@ -13002,9 +12996,9 @@
     ],
     "name": "mkwphonix™",
     "pid": "377584751",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "1030-7922-1062": {
@@ -13559,10 +13553,10 @@
   },
   "0687-1948-8440": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "15948",
+    "ev": "15901",
     "fc": "0687-1948-8440",
     "mii": [
       {
@@ -13572,9 +13566,9 @@
     ],
     "name": "Octavian",
     "pid": "11704",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3693-6719-8534": {
@@ -15244,7 +15238,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "8421",
+    "ev": "8431",
     "fc": "0386-5472-1415",
     "mii": [
       {
@@ -15254,9 +15248,9 @@
     ],
     "name": "Jαkιο",
     "pid": "15751",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "4294-9674-5359": {
@@ -17128,10 +17122,10 @@
   },
   "4129-1945-6268": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "9701",
+    "ev": "9695",
     "fc": "4129-1945-6268",
     "mii": [
       {
@@ -17141,9 +17135,9 @@
     ],
     "name": "skel",
     "pid": "602595852",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "2540-0460-3183": {
@@ -17584,7 +17578,7 @@
   },
   "1932-7356-7213": {
     "conn_fail": "0",
-    "conn_map": "22222222220",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
     "ev": "11393",
@@ -17597,9 +17591,9 @@
     ],
     "name": "simoo",
     "pid": "38893",
-    "suspend": "0",
-    "first_max_vr": 1727703776873,
-    "lastupdated": 1727703776873,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "2625-9454-7205": {
@@ -22967,10 +22961,10 @@
   },
   "5368-7093-1789": {
     "conn_fail": "0",
-    "conn_map": "222222222",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "16301",
+    "ev": "16291",
     "fc": "5368-7093-1789",
     "mii": [
       {
@@ -22981,8 +22975,8 @@
     "name": "jup",
     "pid": "19789",
     "suspend": "1",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3227-2497-2259": {
@@ -24955,7 +24949,7 @@
   },
   "3435-9740-4534": {
     "conn_fail": "0",
-    "conn_map": "222222222",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
     "ev": "10364",
@@ -24969,8 +24963,8 @@
     "name": "A Doodle",
     "pid": "20854",
     "suspend": "1",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "2540-0556-3887": {
@@ -26038,7 +26032,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "15768",
+    "ev": "15829",
     "fc": "1552-2052-7225",
     "mii": [
       {
@@ -26048,9 +26042,9 @@
     ],
     "name": "teziih",
     "pid": "601704569",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3693-6720-8431": {
@@ -31902,7 +31896,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "10285",
+    "ev": "10321",
     "fc": "0007-6000-6000",
     "mii": [
       {
@@ -31913,8 +31907,8 @@
     "name": " Jonkler",
     "pid": "760006000",
     "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "0000-2890-0000": {
@@ -39051,7 +39045,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "5822",
+    "ev": "5882",
     "fc": "2576-9805-9350",
     "mii": [
       {
@@ -39061,9 +39055,9 @@
     ],
     "name": "no name",
     "pid": "21590",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "1889-7857-9433": {
@@ -39111,7 +39105,7 @@
     "conn_map": "22222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "9981",
+    "ev": "9955",
     "fc": "3178-2758-6222",
     "mii": [
       {
@@ -39121,9 +39115,9 @@
     ],
     "name": "Michiberto",
     "pid": "6318",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3178-2759-9895": {
@@ -39802,10 +39796,10 @@
   },
   "5111-0112-9839": {
     "conn_fail": "0",
-    "conn_map": "222222222",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "5632",
+    "ev": "5740",
     "fc": "5111-0112-9839",
     "mii": [
       {
@@ -39816,8 +39810,8 @@
     "name": "Richtofen",
     "pid": "21615",
     "suspend": "1",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "0429-4969-0940": {
@@ -41026,10 +41020,10 @@
   },
   "3871-4844-6582": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "8260",
+    "ev": "8294",
     "fc": "3871-4844-6582",
     "mii": [
       {
@@ -41039,9 +41033,9 @@
     ],
     "name": "☆Quxxn",
     "pid": "601389942",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "1932-7354-5931": {
@@ -42466,10 +42460,10 @@
   },
   "0257-6982-5519": {
     "conn_fail": "0",
-    "conn_map": "222222222",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "5486",
+    "ev": "5499",
     "fc": "0257-6982-5519",
     "mii": [
       {
@@ -42480,8 +42474,8 @@
     "name": "Riku",
     "pid": "21743",
     "suspend": "1",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3478-9235-6156": {
@@ -46568,10 +46562,10 @@
   },
   "0650-2713-4709": {
     "conn_fail": "0",
-    "conn_map": "222222222",
+    "conn_map": "2222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "11075",
+    "ev": "11129",
     "fc": "0650-2713-4709",
     "mii": [
       {
@@ -46582,8 +46576,8 @@
     "name": "sorarisx",
     "pid": "602625269",
     "suspend": "1",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "3264-1753-7208": {
@@ -46702,10 +46696,10 @@
   },
   "4988-1802-6917": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "5000",
-    "ev": "5055",
+    "ev": "5066",
     "fc": "4988-1802-6917",
     "mii": [
       {
@@ -46715,17 +46709,17 @@
     ],
     "name": "Aaron»",
     "pid": "601820581",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "4258-0344-7193": {
     "conn_fail": "0",
-    "conn_map": "22222222222",
+    "conn_map": "222222222",
     "count": "1",
     "eb": "5047",
-    "ev": "8071",
+    "ev": "8154",
     "fc": "4258-0344-7193",
     "mii": [
       {
@@ -46735,9 +46729,9 @@
     ],
     "name": " (っ•ω•c*)",
     "pid": "601684889",
-    "suspend": "0",
-    "first_max_vr": 1728408382984,
-    "lastupdated": 1728408382984,
+    "suspend": "1",
+    "first_max_vr": 1728408563108,
+    "lastupdated": 1728408563108,
     "banned": false
   },
   "4080-2189-4039": {
@@ -46779,5 +46773,19 @@
     "first_max_vr": 1728408148077,
     "lastupdated": 1728408148077,
     "banned": false
+  },
+  "3478-9236-1140": {
+    "conn_fail": "0",
+    "conn_map": "0",
+    "count": "1",
+    "eb": "5000",
+    "ev": "6648",
+    "fc": "3478-9236-1140",
+    "name": "neibbor",
+    "pid": "10164",
+    "suspend": "0",
+    "banned": false,
+    "first_max_vr": "",
+    "lastupdated": 1728408563108
   }
 }
