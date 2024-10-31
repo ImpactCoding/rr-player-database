@@ -1,5 +1,5 @@
 {
-  "last_refresh": 1730371128257,
+  "last_refresh": 1730371308287,
   "2625-9515-5302": {
     "conn_fail": "0",
     "conn_map": "2020000022200220220020",
@@ -1154,7 +1154,7 @@
   },
   "0865-0113-9516": {
     "conn_fail": "0",
-    "conn_map": "2222",
+    "conn_map": "22222",
     "count": "1",
     "eb": "8073",
     "ev": "30000",
@@ -1167,9 +1167,9 @@
     ],
     "name": "Cal.",
     "pid": "601793596",
-    "suspend": "0",
-    "first_max_vr": 1730371128256,
-    "lastupdated": 1730371128256,
+    "suspend": "1",
+    "first_max_vr": 1730371308287,
+    "lastupdated": 1730371308287,
     "banned": false
   },
   "0257-6981-5685": {
@@ -5301,10 +5301,10 @@
   },
   "0944-8933-2215": {
     "conn_fail": "0",
-    "conn_map": "2222",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
-    "ev": "18305",
+    "ev": "18287",
     "fc": "0944-8933-2215",
     "mii": [
       {
@@ -5314,9 +5314,9 @@
     ],
     "name": "no name",
     "pid": "51703",
-    "suspend": "0",
-    "first_max_vr": 1730371128256,
-    "lastupdated": 1730371128256,
+    "suspend": "1",
+    "first_max_vr": 1730371308287,
+    "lastupdated": 1730371308287,
     "banned": false
   },
   "2668-8984-5497": {
@@ -11364,23 +11364,23 @@
     "banned": false
   },
   "0521-3988-6931": {
-    "conn_fail": "1",
-    "conn_map": "222222",
+    "conn_fail": "0",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
-    "ev": "19124",
+    "ev": "19128",
     "fc": "0521-3988-6931",
     "mii": [
       {
-        "data": "data:image/webp;base64,UklGRjYDAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSDQBAAABgGttmwFndmPbrKzWrW21uYK9gjip0zmpUtrqbLa2ba1nvn+6dBExAexf1NzMMrqmJtrSzFyaxsW59Te1+m19brFJDqd6NXe9E5l5avOuWnC3OdWOplANLaVpwDTQDGOGSQIvMZeBBH5LavCSH8xmUg2ftEEFv+Jeg1E+V7jbQFTwI+4pBBX+gnsJR/lc4q58UPZHuFNnlMkMbs4UxaZwUwzehmvDJf6h/hJx1juoHWsc60H1MMJKVB1Fyi/mN4vC4wJz60HBBjCjCpKMH0g2o+1CdCuJ3JbElr0ZddCuyG4Qow8Y5BsLYDIqSpaMLZWaMkmVqi+9L5WCSZu4rja4niRN3pva6HueJM67as5dJzkq1NzlUpjP8E0rZYj55HuPlKFBLVgjgdW2yI4VXey3yHesGFZQOCDcAQAAUAwAnQEqMgAyAD7RXKZOKCUjIigYDKkAGgloAHgkLHeBwQNshuFt6HUCM7CcQK8m2Z/WWVk9DDPl15Tz/83yPyz1fOqElSNt60HDTCf65OmnDoq627MHLJQUHLDkaYRmfHsqkmg+ZmU9CAAA/vtsH8r3jfa4poLda9JC5uqTg73Q693+3/3bkHiHjY+Y8W8RaWw/zF88jhLtPidPKlYlaos1i9G8FP3mziff71R0ovBdzHnmjro4m3WcaA53KldG5T7EEiOYzmo8Yn8qFI58T73/SBFCfnN23fUBGUFF9IDk7apAudC5KiQwu/op0glWKPVIl7nGCLBdk1+GP3SwKlrAvy78g90pZoU/kOHPuqfabu38oJyZlWtimFVaKYnMPHl95RGBa65s42/E7cmWNIt5yPq8xYSU/wmJ5vGWN/Rc5vlYSmV3HwiJU1rS3MROHYTV039wI2918DOlz34QADyKUvisILvbEL5CUBGPx5LQcv4DNaT/l5LEnv7LBiEzroEt2MlxSSoE6CCEzj2DQ3nSbUffKqunNeznaai92v67EkRQAjeGvy/4lM03EeiPxftpyAzGkZtrxEohuQLNnupAiJzCS416E9QBBm8TH3H4OIXqjdWd162ZwAA=",
-        "name": "Pure Play"
+        "data": "data:image/webp;base64,UklGRiQDAABXRUJQVlA4WAoAAAAQAAAAMQAAMQAAQUxQSDQBAAABkLNtm7FHT2zbtlMllVXbtlmmc5XfYPVJmc5Jadtc68Ms37lnuu0iYgLo/6hlWEJ5eUKYpTxJ4ydf1Iypv5yMJ8kRMqdiClVzIRLk3DPO+xxh7V8Z99cuQbkqhiwQ4nnLoDeeIkYYeESAxyvq1QNXweAVuFHcKExvG7eth3K8w905ooI+4D4EoQLf494HovzecB+CUCYnuHNzFC3g5gnejGvDeX5GffHH6U6hpnRwFPsN8y2WBBqsYTYNRFADpoeEujwiHt3FUD+inwQ77/EdO4uilG886gwS38vTRxLqDCsbJil1hpQM6chB1HOv/UN730PyJr3/430SyZuwxf66lSlN1hf2z69ZktieMIUnNnLUMMXFUhguKVvUlSHuu7KvETIMMc4+CUy2eLZNxMWreFTxfFZQOCDKAQAAEAsAnQEqMgAyAD7RVqZOqCQjIigYDKkAGglkAM5g2SRPbgXZmoARwIR7V3y5dFYNHaX763Be4n7LMXdQc8soBnhGLCGPzdik7iV0Wg5YubH8Naq94vNPT1rquvjj4/QYAAD+9Wr//HP/+NF//0fdTyQjXm7Q4uvsK/dWQ5qnIKG/1tD9VTne2EtZx0l0JQWQmn7YgAUA0ixDzmYScZF6xdGgMCINQRonGkcj4FPVaP7dnzeLOl3mw5MaOe68sAAkIMmA4w4uJqPNPAwBnHNujQEWZhcjfAsSWI8B2NKTqEet42FVDwkLxMigKV/IXGQEQnxh4vSNL0cude8grGC9W1iIn3D9G5pHlQfdTwNGmVawkD9EU5yNfn/Z5T0BxTjH6ljCObzjoOry04d3B1UDREgh00VdtKCW6XV7koIkhDXoAG8Qo6PryjFiRD5Vlai0EhCzIuKB//YsJIxwnAdBhl8q0xs1jWDaAmuZ2KqJBrkXPEf5u164Ni25AhuvFFGfIykBm42SV70N4MYlfZggOLtxmJ/5RqoLskNdEMHCK3ZbUtjNTTeSIXeFH5c5Z2lf2ovjTXXajvJDh+WaEaZaf7/AXe1/BOgAAAA=",
+        "name": "Player"
       }
     ],
-    "name": "Pure Play",
+    "name": "no name",
     "pid": "600279379",
-    "suspend": "0",
-    "first_max_vr": 1729678299729,
-    "lastupdated": 1729678299729,
+    "suspend": "1",
+    "first_max_vr": 1730371308287,
+    "lastupdated": 1730371308287,
     "banned": false
   },
   "4859-3361-3662": {
@@ -17622,10 +17622,10 @@
   },
   "1809-9079-5136": {
     "conn_fail": "0",
-    "conn_map": "2222",
+    "conn_map": "22222",
     "count": "1",
     "eb": "8000",
-    "ev": "19458",
+    "ev": "19466",
     "fc": "1809-9079-5136",
     "mii": [
       {
@@ -17635,9 +17635,9 @@
     ],
     "name": "girl",
     "pid": "602168704",
-    "suspend": "0",
-    "first_max_vr": 1730371128256,
-    "lastupdated": 1730371128256,
+    "suspend": "1",
+    "first_max_vr": 1730371308287,
+    "lastupdated": 1730371308287,
     "banned": false
   },
   "4552-6654-3330": {
@@ -22501,10 +22501,10 @@
   },
   "4252-0178-3869": {
     "conn_fail": "0",
-    "conn_map": "2222",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
-    "ev": "15867",
+    "ev": "15878",
     "fc": "4252-0178-3869",
     "mii": [
       {
@@ -22514,9 +22514,9 @@
     ],
     "name": "no name",
     "pid": "21565",
-    "suspend": "0",
-    "first_max_vr": 1730371128256,
-    "lastupdated": 1730371128256,
+    "suspend": "1",
+    "first_max_vr": 1730371308287,
+    "lastupdated": 1730371308287,
     "banned": false
   },
   "2883-6411-3991": {
@@ -38365,10 +38365,10 @@
   },
   "4252-0178-7251": {
     "conn_fail": "0",
-    "conn_map": "2222",
+    "conn_map": "22222",
     "count": "1",
     "eb": "5000",
-    "ev": "6790",
+    "ev": "6802",
     "fc": "4252-0178-7251",
     "mii": [
       {
@@ -38378,9 +38378,9 @@
     ],
     "name": "GameHack38",
     "pid": "24947",
-    "suspend": "0",
-    "first_max_vr": 1730371128256,
-    "lastupdated": 1730371128256,
+    "suspend": "1",
+    "first_max_vr": 1730371308287,
+    "lastupdated": 1730371308287,
     "banned": false
   },
   "4343-9398-9221": {
